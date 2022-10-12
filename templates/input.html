@@ -1,0 +1,39 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% extends 'layout.html'%}{%block title %} Home {% endblock %}{%block content%}
+<div class="container p-3 my-3 text-justify rounded" style="font-size:16px;background-color: #9cff50;">
+    <!-- Dibawah adalah Form-->
+    <form action="http://127.0.0.1:5000/result" method="post">
+        <div class="row">
+            <div class="col-sm-4">
+                <style>
+                    @media (max-width: 800px) {
+                        img {
+                            display: none;
+                        }
+
+                        textarea {
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <img src="static/assets/images/chemical.png" style="width: 100%;">
+            </div>
+            <div class="row col-sm-8">
+                <div class="col-xl-12">
+                        <p style="font-size:16px;"><strong>Input SMILE</strong></p>
+                        <textarea class="rounded" type="text" name="smile" id="smile" placeholder="Masukkan SMILE" rows="8%" cols="50%" style="resize: none;"></textarea>
+                </div>
+                <div class="col-xl-12">
+                    <button type="submit" value="cari" class="btn btn-success" style="font-size:16px;">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</div>
+{% endblock %}

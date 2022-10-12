@@ -1,0 +1,34 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% extends 'layout.html'%}{%block title %} Home {% endblock %}{%block content%}
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class="panel-group" style="width:70%;border:3px solid #9cff50;">
+    
+    <div class="panel">
+      <div class="panel-heading" style="background-color: #9cff50;color:white;"><h1><strong>HASIL</strong></h1></div>
+      <div class="panel-body">
+        <div style="border:3px solid #9cff50;">
+            <h3><strong>SMILE</strong></h3>
+            <textarea class="rounded" type="text" name="smile" placeholder="Masukkan SMILE" rows="8%" cols="40%" style="resize: none;font-size: 100%;" readonly>{{mol}}</textarea>
+        </div>
+        <div style="border:3px solid #9cff50;">
+            <img src="{{MOLFILE}}" style="width: 60%;">
+        </div>
+        <div style="border:3px solid #9cff50;">
+            <a href="{{MOLFILE}}" class="btn btn-success" style="height: 5%;" download>
+                <h3>Download Gambar</h3>
+            </a>
+        </div>
+      </div>
+    </div>
+</div>
+</center>
+{% endblock %}

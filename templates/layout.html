@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+    <title>SUMAIRU</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static' , filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static' , filename='assets/css/fontawesome.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-seo-dream.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animated.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}" />
+    <!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9cff50;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  font-size: 150%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #5ff531;
+}
+</style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="/documentation"><strong>Documentation</strong></a></li>
+    <li><a href="/draw"><strong>Input & Draw</strong></a></li>
+    <li><a href="/"><strong>Home</strong></a></li>
+  </ul>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            
+        </div>
+    </header>
+
+    
+    <!-- ***** Header Area End ***** -->
+    {%block content %}{% endblock %}
+
+
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/owl-carousel.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/animation.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/imagesloaded.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+</body>
+
+</html>
